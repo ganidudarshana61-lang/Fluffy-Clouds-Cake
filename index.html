@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluffy Clouds by Ishadi | Handcrafted Cakes in Sri Lanka</title>
+  <meta name="description" content="Custom birthday, wedding and celebration cakes, cupcakes, cheesecakes and brownies by Fluffy Clouds by Ishadi.">
+
+  <!-- Google Fonts: Playfair Display (headings) + Nunito (body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <!-- Connect the CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== SECTION 01: NAVIGATION BAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="brand">
+        <!-- Replace assets/logo.png with your own logo. If it is missing, the text brand still shows. -->
+        <img src="assets/logo.jpg" alt="" class="brand__logo" width="40" height="40">
+        <span class="brand__name">Fluffy Clouds <small>by Ishadi</small></span>
+      </a>
+
+      <!-- Hamburger button (visible on mobile only) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#cakes" class="nav-link">Our Cakes</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#order" class="btn btn--primary nav-order">Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== SECTION 02: HERO ==================== -->
+    <section class="hero" id="home">
+      <img src="assets/cake.jpg" alt="A beautifully decorated cake" class="hero__bg" data-fallback="Hero Cake">
+      <div class="hero__overlay"></div>
+      <span class="hero__bubble hero__bubble--one"></span>
+      <span class="hero__bubble hero__bubble--two"></span>
+
+      <div class="container hero__content">
+        <h1>Every Celebration Deserves a Little Magic</h1>
+        <p>Handcrafted with love, baked with passion, and designed to make your sweetest moments unforgettable.</p>
+        <div class="hero__buttons">
+          <a href="#cakes" class="btn btn--primary">Explore Our Cakes</a>
+          <a href="#order" class="btn btn--light">Order Your Cake</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 03: WELCOME / INTRODUCTION ==================== -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__image reveal">
+          <video src="assets/vedio.mp4" width="350" muted autoplay loop>
+            this vedio is not supported
+          </video>
+        </div>
+        <div class="about__text reveal">
+          <h2 class="section-title section-title--left">Welcome to Fluffy Clouds by Ishadi</h2>
+          <p>Every cake we make starts with a conversation. Tell us about your celebration, and Ishadi will bake and decorate a cake that suits the day, the people and your taste.</p>
+          <ul class="about__list">
+            <li><strong>Quality ingredients:</strong> real butter, fresh eggs and fine chocolate.</li>
+            <li><strong>Freshly baked:</strong> every cake is baked close to your delivery date.</li>
+            <li><strong>Custom designs:</strong> share your idea, colours or a photo and we will create it.</li>
+            <li><strong>Happy customers:</strong> we do not finish until you love your cake.</li>
+          </ul>
+          <a href="#order" class="btn btn--primary">Start Your Order</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 04: CAKE CATEGORIES ==================== -->
+    <section class="section section--cream" id="cakes">
+      <div class="container">
+        <h2 class="section-title">Our Cake Categories</h2>
+        <p class="section-subtitle">Prices shown are starting prices in LKR. Final prices may vary according to size and design.</p>
+
+        <div class="grid grid--cards">
+
+          <!-- Each category card uses the same structure. data-category is used by JavaScript. -->
+          <article class="card reveal">
+            <div class="card__image"><img src="assets/1.jpg" alt="Birthday cake" loading="lazy" data-fallback="Birthday Cakes"></div>
+            <div class="card__body">
+              <h3>Birthday Cakes</h3>
+              <p>Fun, colourful cakes for every age, topped with your own message.</p>
+              <p class="price">From LKR 4,500</p>
+              <div class="card__buttons">
+                <button class="btn btn--outline btn--small js-view-details" data-category="Birthday Cakes">View Details</button>
+                <button class="btn btn--primary btn--small js-order-category" data-category="Birthday Cakes">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__image"><img src="assets/cake 2.jpg" alt="Wedding cake" loading="lazy" data-fallback="Wedding Cakes"></div>
+            <div class="card__body">
+              <h3>Wedding Cakes</h3>
+              <p>Elegant multi-tier cakes designed around your wedding theme.</p>
+              <p class="price">From LKR 25,000</p>
+              <div class="card__buttons">
+                <button class="btn btn--outline btn--small js-view-details" data-category="Wedding Cakes">View Details</button>
+                <button class="btn btn--primary btn--small js-order-category" data-category="Wedding Cakes">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__image"><img src="assets/cake 3.jpg" alt="Celebration cake" loading="lazy" data-fallback="Celebration Cakes"></div>
+            <div class="card__body">
+              <h3>Celebration Cakes</h3>
+              <p>Anniversaries, graduations and baby showers, made special.</p>
+              <p class="price">From LKR 6,000</p>
+              <div class="card__buttons">
+                <button class="btn btn--outline btn--small js-view-details" data-category="Celebration Cakes">View Details</button>
+                <button class="btn btn--primary btn--small js-order-category" data-category="Celebration Cakes">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__image"><img src="assets/cake 4.jpg"Layer cake" loading="lazy" data-fallback="Layer Cakes"></div>
+            <div class="card__body">
+              <h3>Layer Cakes</h3>
+              <p>Soft sponge layers with smooth buttercream or ganache.</p>
+              <p class="price">From LKR 5,500</p>
+              <div class="card__buttons">
+                <button class="btn btn--outline btn--small js-view-details" data-category="Layer Cakes">View Details</button>
+                <button class="btn btn--primary btn--small js-order-category" data-category="Layer Cakes">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__image"><img src="assets/cake 5.jpg" alt="Cupcakes" loading="lazy" data-fallback="Cupcakes"></div>
+            <div class="card__body">
+              <h3>Cupcakes</h3>
+              <p>Boxes of 6 or 12 with swirled frosting and custom toppers.</p>
+              <p class="price">From LKR 2,400 (box of 6)</p>
+              <div class="card__buttons">
+                <button class="btn btn--outline btn--small js-view-details" data-category="Cupcakes">View Details</button>
+                <button class="btn btn--primary btn--small js-order-category" data-category="Cupcakes">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__image"><img src="assets/cake 6.jpg" alt="Cheesecake" loading="lazy" data-fallback="Cheesecakes"></div>
+            <div class="card__body">
+              <h3>Cheesecakes</h3>
+              <p>Creamy baked and no-bake cheesecakes with fresh toppings.</p>
+              <p class="price">From LKR 5,000</p>
+              <div class="card__buttons">
+                <button class="btn btn--outline btn--small js-view-details" data-category="Cheesecakes">View Details</button>
+                <button class="btn btn--primary btn--small js-order-category" data-category="Cheesecakes">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__image"><img src="assets/cake 7.jpg" alt="Brownies" loading="lazy" data-fallback="Brownies"></div>
+            <div class="card__body">
+              <h3>Brownies</h3>
+              <p>Fudgy chocolate brownies, perfect for gifting and sharing.</p>
+              <p class="price">From LKR 1,800 (box of 6)</p>
+              <div class="card__buttons">
+                <button class="btn btn--outline btn--small js-view-details" data-category="Brownies">View Details</button>
+                <button class="btn btn--primary btn--small js-order-category" data-category="Brownies">Order Now</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 05: FEATURED CAKES ==================== -->
+    <section class="section" id="featured">
+      <div class="container">
+        <h2 class="section-title">Featured Cakes</h2>
+        <p class="section-subtitle">Our most loved creations. Choose a category to filter.</p>
+
+        <!-- Filter buttons: data-filter must match the data-category of each product -->
+        <div class="filters" id="filters" role="group" aria-label="Filter cakes by category">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Birthday Cakes">Birthday</button>
+          <button class="filter-btn" data-filter="Wedding Cakes">Wedding</button>
+          <button class="filter-btn" data-filter="Celebration Cakes">Celebration</button>
+          <button class="filter-btn" data-filter="Layer Cakes">Layer</button>
+          <button class="filter-btn" data-filter="Cupcakes">Cupcakes</button>
+          <button class="filter-btn" data-filter="Cheesecakes">Cheesecakes</button>
+          <button class="filter-btn" data-filter="Brownies">Brownies</button>
+        </div>
+
+        <div class="grid grid--cards" id="productGrid">
+
+          <article class="card product" data-category="Birthday Cakes">
+            <div class="card__image"><img src="assets/gallery 1.jpg" alt="Rainbow Sprinkle Birthday Cake" loading="lazy" data-fallback="Rainbow Sprinkle"><span class="tag">Birthday</span></div>
+            <div class="card__body">
+              <h3 class="product__name">Rainbow Sprinkle Birthday Cake</h3>
+              <p>Vanilla sponge, strawberry cream and a shower of sprinkles.</p>
+              <p class="price">LKR 5,200</p>
+              <button class="btn btn--primary btn--small js-order-product">Order This Cake</button>
+            </div>
+          </article>
+
+          <article class="card product" data-category="Wedding Cakes">
+            <div class="card__image"><img src="assets/gallery 2.jpg" alt="Classic White Rose Wedding Cake" loading="lazy" data-fallback="White Rose"><span class="tag">Wedding</span></div>
+            <div class="card__body">
+              <h3 class="product__name">Classic White Rose Wedding Cake</h3>
+              <p>Three tiers of vanilla bean cake with sugar roses.</p>
+              <p class="price">LKR 32,000</p>
+              <button class="btn btn--primary btn--small js-order-product">Order This Cake</button>
+            </div>
+          </article>
+
+          <article class="card product" data-category="Celebration Cakes">
+            <div class="card__image"><img src="assets/gallery 3.jpg" alt="Golden Drip Celebration Cake" loading="lazy" data-fallback="Golden Drip"><span class="tag">Celebration</span></div>
+            <div class="card__body">
+              <h3 class="product__name">Golden Drip Celebration Cake</h3>
+              <p>Chocolate cake with caramel drip and edible gold details.</p>
+              <p class="price">LKR 7,800</p>
+              <button class="btn btn--primary btn--small js-order-product">Order This Cake</button>
+            </div>
+          </article>
+
+          <article class="card product" data-category="Layer Cakes">
+            <div class="card__image"><img src="assets/gallery 4.jpg" alt="Red Velvet Layer Cake" loading="lazy" data-fallback="Red Velvet"><span class="tag">Layer</span></div>
+            <div class="card__body">
+              <h3 class="product__name">Red Velvet Layer Cake</h3>
+              <p>Moist red velvet with silky cream cheese frosting.</p>
+              <p class="price">LKR 6,500</p>
+              <button class="btn btn--primary btn--small js-order-product">Order This Cake</button>
+            </div>
+          </article>
+
+          <article class="card product" data-category="Cupcakes">
+            <div class="card__image"><img src="assets/gallery 5.jpg" alt="Pastel Buttercream Cupcakes" loading="lazy" data-fallback="Cupcakes"><span class="tag">Cupcakes</span></div>
+            <div class="card__body">
+              <h3 class="product__name">Pastel Buttercream Cupcakes (6)</h3>
+              <p>Assorted flavours with pastel buttercream swirls.</p>
+              <p class="price">LKR 2,600</p>
+              <button class="btn btn--primary btn--small js-order-product">Order These</button>
+            </div>
+          </article>
+
+          <article class="card product" data-category="Cheesecakes">
+            <div class="card__image"><img src="assets/gallery 6.jpg" alt="Strawberry Cheesecake" loading="lazy" data-fallback="Cheesecake"><span class="tag">Cheesecake</span></div>
+            <div class="card__body">
+              <h3 class="product__name">Fresh Strawberry Cheesecake</h3>
+              <p>Baked vanilla cheesecake with a strawberry compote.</p>
+              <p class="price">LKR 5,400</p>
+              <button class="btn btn--primary btn--small js-order-product">Order This Cake</button>
+            </div>
+          </article>
+
+          <article class="card product" data-category="Brownies">
+            <div class="card__image"><img src="assets/gallery 7.jpg" alt="Double Chocolate Brownies" loading="lazy" data-fallback="Brownies"><span class="tag">Brownies</span></div>
+            <div class="card__body">
+              <h3 class="product__name">Double Chocolate Fudge Brownies (6)</h3>
+              <p>Rich, fudgy and loaded with chocolate chunks.</p>
+              <p class="price">LKR 1,900</p>
+              <button class="btn btn--primary btn--small js-order-product">Order These</button>
+            </div>
+          </article>
+
+          <article class="card product" data-category="Birthday Cakes">
+            <div class="card__image"><img src="assets/gallery 8.jpg" alt="Pink Floral Birthday Cake" loading="lazy" data-fallback="Pink Floral"><span class="tag">Birthday</span></div>
+            <div class="card__body">
+              <h3 class="product__name">Pink Floral Birthday Cake</h3>
+              <p>Soft pink buttercream with hand-piped flowers.</p>
+              <p class="price">LKR 6,200</p>
+              <button class="btn btn--primary btn--small js-order-product">Order This Cake</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 06: GALLERY ==================== -->
+    <section class="section section--cream" id="gallery">
+      <div class="container">
+        <h2 class="section-title">Cake Gallery</h2>
+        <p class="section-subtitle">A look at some of the cakes we have made. Click a photo to enlarge it.</p>
+
+        <div class="gallery" id="galleryGrid">
+          <!-- Each button holds one image. Replace the image paths with your own photos. -->
+          <button class="gallery__item" aria-label="Open photo 1"><img src="assets/picture 1.jpg"Pink floral cake" loading="lazy" data-fallback="Gallery 1"></button>
+          <button class="gallery__item" aria-label="Open photo 2"><img src="assets/picture 2.jpg" alt="Tiered wedding cake" loading="lazy" data-fallback="Gallery 2"></button>
+          <button class="gallery__item" aria-label="Open photo 3"><img src="assets/picture 3.jpg" alt="Pastel cupcakes" loading="lazy" data-fallback="Gallery 3"></button>
+          <button class="gallery__item" aria-label="Open photo 4"><img src="assets/picture 4.jpg" alt="Layer cake slice" loading="lazy" data-fallback="Gallery 4"></button>
+          <button class="gallery__item" aria-label="Open photo 5"><img src="assets/picture 5.jpg" alt="Strawberry cheesecake" loading="lazy" data-fallback="Gallery 5"></button>
+          <button class="gallery__item" aria-label="Open photo 6"><img src="assets/picture 6.jpg" alt="Birthday cake with sprinkles" loading="lazy" data-fallback="Gallery 6"></button>
+          <button class="gallery__item" aria-label="Open photo 7"><img src="assets/picture 7.jpg" alt="Chocolate brownies" loading="lazy" data-fallback="Gallery 7"></button>
+          <button class="gallery__item" aria-label="Open photo 8"><img src="assets/picture 8.jpg" alt="Gold drip celebration cake" loading="lazy" data-fallback="Gallery 8"></button>
+        </div>
+      </div>
+    </section>
+    
+    
+        <!-- ==================== SECTION 07: WHY CHOOSE US ==================== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="grid grid--features">
+          <div class="feature reveal"><span class="feature__icon" aria-hidden="true">🧁</span><h3>Freshly Baked with Love</h3><p>Baked to order so your cake is fresh on the day.</p></div>
+          <div class="feature reveal"><span class="feature__icon" aria-hidden="true">🍫</span><h3>Premium Quality Ingredients</h3><p>Real butter, fresh cream and quality chocolate only.</p></div>
+          <div class="feature reveal"><span class="feature__icon" aria-hidden="true">🎨</span><h3>Unique Custom Designs</h3><p>Your colours, your theme, your idea made into a cake.</p></div>
+          <div class="feature reveal"><span class="feature__icon" aria-hidden="true">💬</span><h3>Reliable Customer Service</h3><p>Quick replies on WhatsApp and clear communication.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 08 & 09: ORDER FORM + WHATSAPP ==================== -->
+    <section class="section section--pink" id="order">
+      <div class="container order">
+        <div class="order__intro">
+          <h2 class="section-title section-title--left">Order Your Custom Cake</h2>
+          <p>Fill in the form and press the button. WhatsApp will open with your order details ready to send to Ishadi, who will confirm the price and availability.</p>
+          <p class="note"><strong>Please note:</strong> this website does not take payments and does not save orders. Your order is only placed once you send the message on WhatsApp and Ishadi confirms it.</p>
+        </div>
+
+        <form class="order__form" id="orderForm" novalidate>
+
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name" placeholder="Your full name">
+            <span class="error" id="fullNameError"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">WhatsApp / Phone Number *</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 0771234567">
+              <span class="error" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address (optional)</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+              <span class="error" id="emailError"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="category">Cake Category *</label>
+              <select id="category" name="category">
+                <option value="">Select a category</option>
+                <option>Birthday Cakes</option>
+                <option>Wedding Cakes</option>
+                <option>Celebration Cakes</option>
+                <option>Layer Cakes</option>
+                <option>Cupcakes</option>
+                <option>Cheesecakes</option>
+                <option>Brownies</option>
+              </select>
+              <span class="error" id="categoryError"></span>
+            </div>
+            <div class="form-group">
+              <label for="flavour">Preferred Cake Flavour *</label>
+              <select id="flavour" name="flavour">
+                <option value="">Select a flavour</option>
+                <option>Vanilla</option>
+                <option>Chocolate</option>
+                <option>Red Velvet</option>
+                <option>Strawberry</option>
+                <option>Butterscotch</option>
+                <option>Lemon</option>
+                <option>Coffee Mocha</option>
+                <option>Other (describe below)</option>
+              </select>
+              <span class="error" id="flavourError"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="size">Cake Size *</label>
+              <select id="size" name="size">
+                <option value="">Select a size</option>
+                <option>1 kg (serves 8-10)</option>
+                <option>1.5 kg (serves 12-15)</option>
+                <option>2 kg (serves 18-20)</option>
+                <option>3 kg or more (serves 25+)</option>
+                <option>Box of 6 (cupcakes / brownies)</option>
+                <option>Box of 12 (cupcakes / brownies)</option>
+              </select>
+              <span class="error" id="sizeError"></span>
+            </div>
+            <div class="form-group">
+              <label for="deliveryDate">Required Delivery Date *</label>
+              <input type="date" id="deliveryDate" name="deliveryDate">
+              <span class="error" id="deliveryDateError"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="colourTheme">Preferred Colour Theme *</label>
+            <input type="text" id="colourTheme" name="colourTheme" placeholder="e.g. Pastel pink and gold">
+            <span class="error" id="colourThemeError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="designDescription">Custom Cake Design Description *</label>
+            <textarea id="designDescription" name="designDescription" rows="4" placeholder="Describe the design, theme or message you would like on the cake"></textarea>
+            <span class="error" id="designDescriptionError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="specialInstructions">Special Instructions (optional)</label>
+            <textarea id="specialInstructions" name="specialInstructions" rows="3" placeholder="Allergies, eggless, delivery notes, etc."></textarea>
+          </div>
+
+          <fieldset class="form-group choice">
+            <legend>Delivery or Pickup *</legend>
+            <label class="choice__option"><input type="radio" name="delivery" value="Delivery"> Delivery</label>
+            <label class="choice__option"><input type="radio" name="delivery" value="Pickup"> Pickup</label>
+            <span class="error" id="deliveryError"></span>
+          </fieldset>
+
+          <button type="submit" class="btn btn--primary btn--full">Send Order on WhatsApp</button>
+
+          <!-- Shown by JavaScript after the form is valid -->
+          <div class="success" id="successMessage" role="status" hidden>
+            Thank you! WhatsApp is opening with your order. Please press Send there. If nothing opened,
+            <a href="#" id="whatsappFallback" target="_blank" rel="noopener">tap here to open WhatsApp</a>.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 10: TESTIMONIALS ==================== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Customer Testimonials</h2>
+        <p class="section-subtitle">Sample reviews for demonstration. Replace them with real customer feedback.</p>
+        <div class="grid grid--testimonials">
+          <blockquote class="testimonial reveal">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"The cake looked even prettier than the photo I sent, and everyone asked where it was from."</p>
+            <footer>Nethmi Perera, Colombo</footer>
+          </blockquote>
+          <blockquote class="testimonial reveal">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"Our wedding cake was perfect. It was soft, not too sweet, and arrived right on time."</p>
+            <footer>Kasun and Dilini, Negombo</footer>
+          </blockquote>
+          <blockquote class="testimonial reveal">
+            <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+            <p>"The brownies disappeared in minutes at our office party. Easy ordering on WhatsApp too."</p>
+            <footer>Aaron Fernando, Kandy</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 11: CONTACT ==================== -->
+    <section class="section section--cream" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">The details below are placeholders. Replace them with your own.</p>
+        <div class="grid grid--contact">
+          <div class="contact-card reveal"><span aria-hidden="true">🎂</span><h3>Bakery</h3><p>Fluffy Clouds by Ishadi</p></div>
+          <div class="contact-card reveal"><span aria-hidden="true">📞</span><h3>Phone</h3><p><a href="tel:+94771234567">+94 77 123 4567</a></p></div>
+          <div class="contact-card reveal"><span aria-hidden="true">💬</span><h3>WhatsApp</h3><p><a href="#" class="js-whatsapp-link" target="_blank" rel="noopener">Chat on WhatsApp</a></p></div>
+          <div class="contact-card reveal"><span aria-hidden="true">✉️</span><h3>Email</h3><p><a href="mailto:hello@fluffyclouds.example">hello@fluffyclouds.example</a></p></div>
+          <div class="contact-card reveal"><span aria-hidden="true">📍</span><h3>Location</h3><p>123 Sweet Lane, Colombo, Sri Lanka</p></div>
+          <div class="contact-card reveal">
+            <span aria-hidden="true">📱</span><h3>Follow Us</h3>
+            <p class="social-links">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+              <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== SECTION 12: FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="brand brand--footer"><span class="brand__name">Fluffy Clouds <small>by Ishadi</small></span></a>
+        <p>Handcrafted cakes and sweet treats for every celebration in Sri Lanka.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#cakes">Our Cakes</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Cake Categories</h4>
+        <ul>
+          <li>Birthday Cakes</li><li>Wedding Cakes</li><li>Celebration Cakes</li>
+          <li>Layer Cakes</li><li>Cupcakes</li><li>Cheesecakes</li><li>Brownies</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+94771234567">+94 77 123 4567</a></li>
+          <li><a href="mailto:hello@fluffyclouds.example">hello@fluffyclouds.example</a></li>
+          <li>Colombo, Sri Lanka</li>
+        </ul>
+        <p class="social-links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+        </p>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; <span id="year">2026</span> Fluffy Clouds by Ishadi. All rights reserved.</p>
+  </footer>
+
+  <!-- ==================== LIGHTBOX (gallery pop-up) ==================== -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close image">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">&#10094;</button>
+    <img src="" alt="" id="lightboxImage" class="lightbox__image">
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <!-- Floating buttons -->
+  <a href="#" class="floating-whatsapp js-whatsapp-link" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>&#8593;</button>
+
+  <!-- Connect the JavaScript file (at the end so the page loads first) -->
+  <script src="script.js"></script>
+</body>
+</html>
